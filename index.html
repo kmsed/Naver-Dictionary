@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>네이버</title>
+        <link rel="shortcut icon" href="https://ssl.pstatic.net/dicimg/favicons/dict/v1/mhome/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header class="top"> <!-- div태크와 같은 역할(구별을 위해) / 시맨틱태그-->
+            <div class="center-align"> <!--가운데 정렬용 div-->
+                
+                <a href="https://www.naver.com"> <!-- 자식(NAVER)를 안보이게 했기 때문에 너비가 0 이 된다 -> a태그도 0이 되기 때문에 위로 빼준것 -->
+                    <p class="logo">
+                       <span class="blind">NAVER</span>
+                    </p>
+                </a>
+
+                <a href="https://doct.naver.com">
+                    <p class="dictionary">
+                        <span class="blind">사전</span>
+                    </p>
+                </a>
+
+                <a href="https://papago.naver.com">
+                    <p class="papago">
+                        <span class="blind">파파고</span>
+                    </p>
+                </a>
+
+                <a href="https://dict.naver.com/userstranslate/">
+                    <p class="translation">
+                        <span class="blind">참여번역</span>
+                    </p>
+                </a>
+                
+                <a href="https://terms.naver.com">
+                    <p class="wikipedia">
+                            <span class="blind">지식백과</span>
+                    </p>
+                </a>
+
+                <p class="service-icon"> 
+                    <span class="blind">서비스 더보기</span>
+                </p>
+
+                <p class="mail-icon"> 
+                    <span class="blind">메일</span>
+                </p>
+
+                <p class="notice-icon"> 
+                    <span class="blind">알림</span>
+                </p>
+
+                <span class="name">김미솔</span>
+                    
+                <img src="./myInfo.gif" class="id" alt="프로필 이미지"/>  <!-- alt : 사진 설명 -->
+                    
+                <p class="blind">내정보 보기</p>
+
+                    
+            </div>
+        </header>
+
+
+        <nav>
+            <div class="top-line">
+                <div class="center-align">
+                    <div class="ul"> <!-- 여기서 부터 리스트야 unordered item-->
+                        <a href="https://dict.naver.com/search.nhn?query=사과">
+                            <li>사전홈</li>
+                        </a>
+                    
+                        <a href="https://en.dict.naver.com/#/search?range=all&query=사과">    
+                            <li>영어</li>
+                        </a>    
+
+                        <a href="https://ko.dict.naver.com/#/search?range=all&query=사과">
+                            <li>국어</li>
+                        </a>
+
+                        <a href="https://hanja.dict.naver.com/search?query=사과">
+                            <li>한자</li>
+                        </a>
+
+                        <a href="https://ja.dict.naver.com/#/search?query=사과">
+                            <li>일본어</li>
+                        </a>    
+                            
+                        <a href="https://zh.dict.naver.com/#/search?query=사과">
+                            <li>중국어</li>
+                        </a>
+
+                        <a href="https://dict.naver.com/frkodict/#/search?query=사과">
+                            <li>프랑스어</li>
+                        </a>
+
+                        <a href="https://dict.naver.com/eskodict/#/search?query=사과">
+                            <li>스페인어</li>
+                        </a>
+
+                        <a href="https://dict.naver.com/dekodict/#/search?query=사과">
+                            <li>독일어</li>
+                        </a>
+
+                        <a href="https://dict.naver.com/vikodict/#/search?query=사과">
+                            <li>베트남어</li>
+                        </a>
+
+                        <span class="setting">언어설정 한국어</span>
+                    </div>
+                </div>        
+            </div>
+        </nav>
+        
+        <header class="center-align line">
+            <a href="https://ko.dict.naver.com/#/main">
+                <p class="search">국어사전</p>
+            </a>
+
+            <input class="input_text"/>
+
+            <span class="keyboard"></span>
+
+            <button class="btu">
+                <span class="blind">검색</span> <!--버튼위에 글씨 지우기 / 지워지는 부분만 span으로 뺴서 적용-->
+            </button> 
+        </header>
+        
+
+        <nav>
+            <div class="center-align">
+                <div class="middle-line">
+                    <div class="tab-item">
+                        <a href="https://dict.naver.com/search.nhn?query=사과">
+                            <li class="group">전체</li>
+                        </a>
+                        
+                        <a href="https://ko.dict.naver.com/#/search?range=word&query=사과">
+                           <li class="group">단어</li>
+                        </a>
+
+                        <a href="https://ko.dict.naver.com/#/search?range=idioms&query=사과">
+                            <li class="group">속담·관용구</li>
+                        </a>
+
+                        <a href="https://ko.dict.naver.com/#/search?range=meaning&query=사과">
+                            <li class="group">뜻풀이</li>
+                        </a>
+
+                        <a href="https://ko.dict.naver.com/#/search?range=example&query=사과">
+                            <li class="group">예문</li>
+                        </a>
+
+                        <a href="https://ko.dict.naver.com/#/search?range=spelling&query=사과">
+                            <li class="group">맞춤법·표기법</li>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        
+
+        <main>
+            <div class="center-align">
+                <div class="main-first">
+                    <span class="split-first">단어</span>
+                    <div class="block-first">
+                        <div>
+                            <a href="https://ko.dict.naver.com/#/entry/koko/d227ed8623fe437fb32104a5d81c299a">
+                                <p class="apple-first">사과</p>
+                            </a>
+                        </div>
+
+                        <p class="noun">명사</p>
+                        <p class="noun-">사과나무의 열매</p>
+                        
+                        <div>
+                            <p class="synonym">유의어</p>
+                        </div>
+                        <p class="synonym-first">평과</p>
+                        <p class="synonym-first">능금</p>
+                        
+                        <div>
+                            <a href="https://stdict.korean.go.kr/main/main.do">
+                                <p class="source">표준국어대사전</p>
+                            </a>
+                        </div>
+
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/entry/koko/d227ed8623fe437fb32104a5d81c299a">
+                                    <p class="apple-first">사과</p>
+                                </a>
+                            </div>
+
+                            <p class="noun">명사</p>
+                            <p class="noun-">자기의 잘못을 인정하고 용서를 빎</p>
+                            <div>
+                                <p class="synonym">유의어</p>
+                            </div>
+                            <p class="synonym-first">저두평신</p>
+                            <p class="synonym-first">회사</p>
+                            <p class="synonym-first">사죄</p>
+                            <div>
+                                <a href="https://stdict.korean.go.kr/main/main.do">
+                                    <p class="source">표준국어대사전</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/entry/koko/d227ed8623fe437fb32104a5d81c299a">
+                                    <p class="apple-first">사과</p>
+                                </a>
+                            </div>
+
+                            <p class="noun">명사</p>
+                            <p class="noun-">잘못을 용서함.</p>
+
+                            <div>
+                                <a href="https://stdict.korean.go.kr/main/main.do">
+                                    <p class="source">표준국어대사전</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/entry/koko/d227ed8623fe437fb32104a5d81c299a">
+                                    <p class="apple-first">사과</p>
+                                </a>
+                            </div>
+
+                            <p class="noun-first">1.</p>
+                            <p class="noun">명사</p>
+                            <p class="noun-">학의 네 가지 학과. 덕행, 언어, 정사(政事), 문학을 이른다.</p>
+                            
+                            <div>
+                                <p class="noun-first">2.</p>
+                                <p class="noun">명사</p>
+                                <p class="noun-">종교 일반 천도교에서, 도를 닦는 네 과정. 곧 성(誠), 경(敬), 신(信), 법(法)을 이른다.</p>
+                            </div>
+
+                            <div>
+                                <a href="https://stdict.korean.go.kr/main/main.do">
+                                    <p class="source">표준국어대사전</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/entry/koko/d227ed8623fe437fb32104a5d81c299a">
+                                    <p class="apple-first">사과</p>
+                                </a>
+                            </div>
+
+                            <p class="noun">명사</p>
+                            <p class="noun-">역사 조선 시대에, 오위(五衛)에 둔 정육품의 군직(軍職). 현직에 종사하고 있지 않은 문관, 무관 및 음관(蔭官)이 맡았다.</p>
+                    
+                            <div>
+                                <a href="https://stdict.korean.go.kr/main/main.do">
+                                    <p class="source">표준국어대사전</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="main-middle">
+                    <a href="https://ko.dict.naver.com/#/search?range=word&query=%EC%82%AC%EA%B3%BC&shouldSearchOpen=false">
+                        <p class="add">단어 더보기 ></p>
+                    </a>
+                </div>
+               
+                <div class="main-second">
+                   <span class="split-first">맞춤법·표기법</span>
+                    <div class="block-first">
+                        <div>
+                            <a href="https://ko.dict.naver.com/#/entry/koko/d227ed8623fe437fb32104a5d81c299a/historyInfo">
+                                <p class="word">소과(17세기~18세기)>사과(20세기~현재)</p>
+                            </a>
+                        </div>
+                        <p class="noun-">현대 국어 ‘사과’의 옛말은 17세기 문헌에서부터 나타난다. 이 단어는 18세기에 제1음절의 ‘ㆍ’가 ‘ㅏ’로 변하된 것으로 추정된다.</p>
+                        
+                        <div>
+                            <a href="https://opendict.korean.go.kr/main">
+                                <p class="source">우리말샘 역사정보</p>
+                            </a>
+                        </div>
+
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/correct/korean/info?seq=45">
+                                    <p class="word">'사과나무'의 띄어쓰기</p>
+                                </a>
+                            </div>
+                            
+                            <p class="noun-">'사과나무'로 붙여 씁니다. 동식물의 이름이나 분류학상의 이름은 붙여 쓰는 것이 원칙입니다. 동식물명이 둘 이상의 단어의 결합으로 이루어진 경우라도 하나의 개념을 나타내기 때문에 하나의 단어로 보아 붙여 쓰는...</p>
+                    
+                            <div>
+                                <a href="https://www.korean.go.kr/front/mcfaq/mcfaqList.do">
+                                    <p class="source">국립국어원 온라인가나다</p>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/correct/korean/info?seq=1318">
+                                    <p class="word">'사과 식초 음료' 띄어쓰기</p>
+                                </a>
+                            </div>
+
+                            <p class="noun-">'가루식초(가루食醋)', '감식초(감食醋)', '과실음료(果實飮料)', '맥아음료(麥芽飮料)', '유산음료(乳酸飮料)'는 한 단어로 굳어져 쓰임에 따라 그 쓰임이 사전에 실려 있습니다만, 문의하신 것은 이에 해당하지 않으므로, '사과...</p>
+                    
+                            <div>
+                                <a href="https://www.korean.go.kr/front/mcfaq/mcfaqList.do">
+                                    <p class="source">국립국어원 온라인가나다</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="main-line">
+                            <div>
+                                <a href="https://ko.dict.naver.com/#/correct/korean/info?seq=1336">
+                                    <p class="word">미안함을 나타내는 단어</p>
+                                </a>
+                            </div>
+
+                            <p class="noun-">문의하신 단어들의 뜻풀이를 보면, '사죄(謝罪)'는 '지은 죄나 잘못에 대하여 용서를 빎.'을, '사과(謝過)'는 '자기의 잘못을 인정하고 용서를 빎.'을, '죄송하다(罪悚하다)'는 '죄스러울 정도로 황송하다.'를, '미안(未安)'은...</p>
+                    
+                            <div>
+                                <a href="https://www.korean.go.kr/front/mcfaq/mcfaqList.do">
+                                    <p class="source">국립국어원 온라인가나다</p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="main-middle">
+                    <a href="https://ko.dict.naver.com/#/search?range=spelling&query=사과">
+                        <p class="add">맞춤법/표기법 더보기 ></p>
+                    </a>
+                </div>
+
+    
+                <div class="main-third">
+                    <span class="split-first">속담·관용구</span>
+                    <div class="block-first">
+                        <p class="noun">속담</p>
+                        <p class="apple-second">사과</p>
+                        <a href="https://ko.dict.naver.com/#/entry/koko/deb9c357c36242468023f11e68bff72f">
+                            <p class="word">가 되지 말고 도마도가 되라 -> 사과</p>
+                        </a>
+
+                        <div>
+                            <p class="noun">북한어</p>
+                            <p class="noun-">사과처럼 겉만 붉고 속은 흰 사람이 되지 말고 토마토처럼 겉과 속이 같은 견실한 사람이 되라는 말.</p>
+                        </div>
+                      
+                        <div>
+                            <a href="https://stdict.korean.go.kr/main/main.do">
+                                <p class="source">표준국어대사전</p>
+                            </a>
+                        </div>
+                    
+                        <div class="main-line">
+                            <p class="noun">속담</p>
+                            <a href="https://ko.dict.naver.com/#/entry/koko/3f54de02f7724159849a8e985a0ca349">
+                                <p class="word">잘못한 것 없이도</p>
+                                <p class="apple-second">사과</p>
+                                <p class="word">나무 -> 잘못</p>
+                            </a>
+                         
+                            <div>
+                                <p class="noun">북한어</p>
+                                <p class="noun-">사과나무의 사과(沙果)를 사과(謝過)에 빗대어 이르는 말로, 잘못 없이 애매하게 사죄하는 경우를 이르는 말.</p>
+                            </div>
+                        
+                            <div>
+                                <a href="https://stdict.korean.go.kr/main/main.do">
+                                    <p class="source">표준국어대사전</p>
+                                </a>
+                            </div>    
+                        </div>
+
+                        <div class="main-line">
+                            <p class="noun">속담</p>
+                            <a href="https://ko.dict.naver.com/#/entry/koko/8aa9109352b14c8dbbbadd75a127fd24">
+                                <p class="word">입에 떨어지는</p>
+                                <p class="apple-second">사과</p>
+                                <p class="word">를 기다리는 식 -> 입</p>
+                            </a>
+                         
+                            <div>
+                                <p class="noun">북한어</p>
+                                <p class="noun-">노력은 하지 아니하면서도 좋은 결과를 기대하는 잘못된 태도를 이르는 말.</p>
+                            </div>
+                        
+                            <div>
+                                <a href="https://stdict.korean.go.kr/main/main.do">
+                                    <p class="source">표준국어대사전</p>
+                                </a>
+                            </div>    
+                        </div>
+                    
+                        <div class="main-line">
+                            <p class="noun">속담</p>
+                            <a href="https://ko.dict.naver.com/#/entry/koko/8aa9109352b14c8dbbbadd75a127fd24">
+                                <p class="apple-second">사과</p>
+                                <p class="word">나무에 배가 열렸나</p>
+                            </a>
+                         
+                            <div>
+                                <p class="noun">북한어</p>
+                                <p class="noun-"> 사과나무에 배가 열린 것처럼 엉뚱하다는 뜻으로, 이치에 맞지 않는 전혀 뜻밖의 일이 생겼음을 비유적으로 이르는 말.</p>
+                            </div>
+                        
+                            <div>
+                                <a href="https://opendict.korean.go.kr/main">
+                                    <p class="source">우리말샘</p>
+                                </a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-middle">
+                    <a href="https://ko.dict.naver.com/#/search?range=spelling&query=사과">
+                        <p class="add">속담·관용구 더보기 ></p>
+                    </a>
+                </div>
+        </main>
+
+    </body>
+
+</html>
