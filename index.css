@@ -1,0 +1,334 @@
+* {   /* 모든 태그에 적용시킨다는 뜻 */
+    box-sizing: border-box; /* width는 보더굵기 + 패딩넓이 까지니까 -> 기준을 보더로 바꿔줘 */
+}
+
+html, body { /*기본으로 생기는 마진, 패딩 지우기*/
+    margin: 0;
+    padding: 0;
+}
+
+.blind { /*글씨 안보이게 */
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.top {
+    background: #03c75a;
+    height: 54px;
+}
+
+.center-align { /*div태그 인거만 생략가능 -> header태그면 header#~ */
+    margin: 0 auto;
+    width: 980px;
+}
+
+.logo {
+    width: 59px;
+    height: 18px;
+    margin-top: 22px;
+    background-position: 0 0;
+    background-image: url(./Nsp_gnb_191101.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.dictionary {
+    width: 41px;
+    height: 24px;
+    margin-top: 16px;
+    margin-left: 10px;
+    background-position: 0 -20px;
+    background-image: url(./Nsp_gnb_191101.png);
+    display: inline-block;
+}
+
+.papago {
+    width: 47px;
+    height: 19px;
+    margin-top: 18px;
+    margin-left: 10px;
+    background-position: -39px -110px;
+    background-image: url(./Nsp_gnb_191101.png);
+    display: inline-block;
+}
+
+.translation {
+    width: 60px;
+    height: 19px;
+    margin-top: 18px;
+    margin-left: 10px;
+    background-position: -90px -110px;
+    background-image: url(./Nsp_gnb_191101.png);
+    display: inline-block;
+}
+
+.wikipedia {
+    width: 62px;
+    height: 19px;
+    margin-top: 18px;
+    margin-left: 10px;
+    background-position: -160px -110px;
+    background-image: url(./Nsp_gnb_191101.png);
+    display: inline-block;
+}
+.service-icon {
+    width: 17px;
+    height: 17px;
+    float: right;
+    margin: 19px 0 0 10px; 
+    background-position: -324px -120px;
+    background-image: url(./sp_gnb_v15.png);
+}
+
+.mail-icon{
+    width: 21px;
+    height: 17px;
+    float: right;
+    margin: 19px 0 0 10px; 
+    background-position: -302px -120px;
+    background-image: url(./sp_gnb_v15.png);
+}
+
+.notice-icon{
+    width: 17px;
+    height: 19px;
+    float: right;
+    margin: 19px 0 0 10px; 
+    background-position: -284px -119px;
+    background-image: url(./sp_gnb_v15.png);
+}
+
+.name {
+    float: right; /*오른쪽 끝으로 보내기*/
+    margin-top: 19px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #e5e5e5;
+}
+
+.id {  
+    border: 1px solid  #03c75a;
+    border-radius: 50px; /*이미지 테두리 둥그렇게 */
+    /* display: inline-block; */
+    float: right; 
+    width: 28px;
+    margin-top: 15px;
+}
+
+.top-line{
+    height: 39px;
+    border-bottom: 1px solid #e5e5e5; 
+}
+
+.ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /* 구분 점 없애주기 */
+}
+
+nav li {
+    display: inline-block; /*영역 바꿔서 일렬로 나오게*/
+    padding: 10px 12px 0px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+}
+.setting {
+    float: right;
+    padding: 10px;
+    font-size: 12px;
+    color: #828282;
+}
+
+.search {
+    width: 103px;
+    height: 23px;
+    background-image: url(./h1_sub_dic_beta.png);
+    text-indent: 100%; /*글씨를 그림의 영역에서 빼기*/
+    overflow: hidden; /*글씨 숨기기*/ 
+    display: inline-block;
+    vertical-align: middle; /* 가운데로 정렬 */
+    margin: 30px 23px 30px 0;
+}
+
+.center-align a {
+    text-decoration: none; /* a태그 사용했을때 나오는 밑줄 없애주기 */
+} 
+
+.input_text {
+    padding: 12px 0 12px 10px; /* 위에꺼 한번에 쓰기 */
+    width: 430px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid #03c75a;
+    vertical-align: middle;
+    margin: 30px 0;
+    /* position: relative; 버튼을 검색창 옆에 바로 붙히려면 컨테이닝 블록으로 만들면 돼 -> 포지션이 스태딕만 아니면 돼 */
+}
+
+.keyboard {
+    background-image: url("./sp_pc.png");
+    background-position: -338px -164px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    display: inline-block;   
+    /* margin: 0 0 0 -73px; */
+    vertical-align: middle;
+}
+
+
+.btu {
+    width: 40px;
+    height: 40px;
+    border: none; /*기본적으로 적용되는 css 지우기 -> 기본으로 두면 브라우저마다 다르게 보여서 */
+    background: #03c75a;
+    vertical-align: middle;
+    background-image: url("./sp_search.png");
+    background-position: 7px -50px; /* 오른쪽으로 7px가고 위쪽으로 50px올리기*/
+    background-repeat: no-repeat;
+    margin: 30px 0 30px 0px;
+    display: inline-block; 
+    /* position: absolute;  앱솔루트면 자신의 부모를 찾아서 스태딕이 아닌곳에 붙어 */
+} 
+
+.line {
+    border-bottom: 2px solid #000;
+}
+
+.middle-line {
+    height: 39px;
+    border-bottom: 1px solid #e5e5e5;  
+}
+
+.group {
+    padding: 10px 10px 10px 14px;
+    font-size: 14px;
+    color: #444;
+}
+.main-first {
+    width: 980px;
+    height: 700px;
+    padding-top: 28px;
+}
+
+.block-first {
+    padding: 20px 0 30px 15px;
+    /* border-bottom: 1px solid #f1F3f1; */
+}
+
+.split-first {
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.apple-first {
+    font-size: 20px;
+    background: #E3F4FF;
+    margin: 0;
+    display: inline-block;
+}
+
+.noun {
+    display: inline-block;
+    margin: 4px 2px 0 0;
+    color: #6881a1;
+}
+
+.noun- {
+    display: inline-block;
+    margin: 4px 2px 0 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.noun-first {
+    display: inline-block;
+    margin: 4px 2px 0 0;    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.synonym {
+    /* display: block; */
+    margin: 8px 9px 4px 0;
+    font-size: 15px;
+    color: #666;
+    float: left;  /*사과나무열매 밑줄에 오게하려구*/
+}
+
+.synonym-first {
+    margin: 4px 1px 0 0;
+    padding: 4px 5px 4px 5px;
+    font-size: 14px;
+    display: inline-block;
+    background: #f1f2f3;
+}
+
+.source {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.main-line {
+    border-top: 1px solid #f1F3f1;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.main-middle {
+    width: 980px;
+    height: 30px;
+    background: #fafafa;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #cacccc;
+}
+
+.add {
+    float: right;
+    margin: 0;
+    padding: 5px 9px 0 0;
+    font-size: 13px;
+}
+
+.main-second {
+    width: 980px;
+    height: 560px;
+    padding-top: 28px;
+}
+
+.proverb {
+    margin: 0 2px 0 0;
+    display: inline-block;
+    color: #7a96b9;
+    font-size: 17px;
+}
+.apple-second {
+    margin: 0;
+    display: inline-block;
+    background: #E3F4FF;
+    font-size: 17px;
+}
+.word {
+    margin: 0;
+    display: inline-block;
+    font-size: 17px;
+    color: #1b47b9;
+}
+
+.main-third {
+    width: 980px;
+    height: 489px;
+    padding-top: 28px;
+}
